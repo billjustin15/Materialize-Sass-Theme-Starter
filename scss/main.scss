@@ -1,4 +1,59 @@
+@import './materialize.scss';
+
+
+// Header
+
+$header-bg: url(../img/pattern.png);
+$header-height: 300px;
 
 
 
+.main-header {
+    background: $header-bg;
+    color: #fff;
+    height: $header-height;
+    margin-bottom: 30px;
+}
+
+.img-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+}
+
+.card-content {
+    color: $primary-color;
+}
+
+ul.sidenav li a:hover, ul.hide-on-med-and-down li a:hover {
+    background-color: white !important;
+    color: #292929 !important;
+}
+
+// Text color function
+@function set-text-color($color) { // set function name to variable
+    @if (lightness($color) > 50) {  // checks color lightness
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
+body {
+    background: $primary-color;
+    color: set-text-color($primary-color)
+}
+
+.row-1, .row-2, .row-3 {
+    opacity: 0;
+}
+
+.page-footer {
+    background: $primary-color-light;
+    .footer-copyright {
+        background: $secondary-color;
+    }
+}
 

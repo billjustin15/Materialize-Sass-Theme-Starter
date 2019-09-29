@@ -6443,35 +6443,3 @@ input[type=range]::-ms-thumb {
     bottom: auto;
     text-align: center;
     margin-top: 1.2rem; } }
-.main-header {
-  background: url(../img/pattern.png);
-  color: #fff;
-  height: 300px;
-  margin-bottom: 30px; }
-
-.img-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 300px; }
-
-.card-content {
-  color: #512da8; }
-
-ul.sidenav li a:hover, ul.hide-on-med-and-down li a:hover {
-  background-color: white !important;
-  color: #292929 !important; }
-
-body {
-  background: #512da8;
-  color: #fff; }
-
-.row-1, .row-2, .row-3 {
-  opacity: 0; }
-
-.page-footer {
-  background: #7651d0; }
-  .page-footer .footer-copyright {
-    background: #212121; }
-
-/*# sourceMappingURL=main.css.map */
